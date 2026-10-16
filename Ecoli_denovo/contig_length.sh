@@ -1,14 +1,4 @@
-#!/bin/bash
-#SBATCH -J contig_len
-#SBATCH -p debug
-#SBATCH -A r00302
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=16G
-#SBATCH --time=01:00:00
-#SBATCH -o contig_len_%j.out
-#SBATCH -e contig_len_%j.err
+
 
 # Extracts the length of every contig in the optimal assemblies,
 # then makes tables and plots with plot_contigs.py.
