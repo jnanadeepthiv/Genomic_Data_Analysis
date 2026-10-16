@@ -1,14 +1,4 @@
-#!/bin/bash
-#SBATCH -J plot_asm
-#SBATCH -p debug
-#SBATCH -A r00302
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=16G
-#SBATCH --time=01:00:00
-#SBATCH -o plots_%j.out
-#SBATCH -e plots_%j.err
+
 
 # Makes fig1-fig4 (Velvet vs Oases) from velvet_summary.txt and oases_summary.txt.
 # Takes a few seconds, so it can run directly:  bash run_plots.sh
