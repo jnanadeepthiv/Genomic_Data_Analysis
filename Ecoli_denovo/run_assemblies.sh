@@ -1,16 +1,4 @@
-#!/bin/bash
-#SBATCH -J ecoli_asm
-#SBATCH -p debug
-#SBATCH -A r00302
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=16
-#SBATCH --mem=500G
-#SBATCH --time=1:00:00
-#SBATCH -o asm_%j.out
-#SBATCH -e asm_%j.err
-#SBATCH --mail-user=jvishnu@iu.edu
-#SBATCH --mail-type=ALL
+
 
 module load conda
 conda activate assignment1
